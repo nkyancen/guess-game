@@ -17,7 +17,7 @@
 
     <style name="Button" parent="Widget.Material3.Button">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
 
         <item name="android:layout_marginHorizontal">5dp</item>
@@ -37,8 +37,6 @@
 
     <style name="Restart_Button" parent="Button">
         <item name="android:layout_width">90dp</item>
-        <item name="android:layout_height">80dp</item>
-        <item name="android:layout_weight">1</item>
 
         <item name="android:layout_gravity">end</item>
     </style>
