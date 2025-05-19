@@ -3,7 +3,121 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".GameActivity" />
+    style="@style/VerticalLinearLayout"
+    tools:context=".GameActivity">
+
+    <Button
+        android:id="@+id/btn_restart"
+        style="@style/Restart_Button"
+        android:text="@string/restart"
+        />
+    <Space
+        style="@style/Space"
+        />
+
+    <TextView
+        android:id="@+id/text_attempts_count"
+        style="@style/TextView"
+        android:text="@string/app_name"
+        />
+
+    <TextView
+        android:id="@+id/text_user_input"
+        style="@style/TextView"
+        android:text=""
+        />
+
+    <Space
+        style="@style/Space"
+        />
+
+    <TableLayout
+        style="@style/Table">
+
+        <TableRow
+            style="@style/Table">
+            <Button
+                android:id="@+id/btn_one"
+                style="@style/Button"
+                android:text="@string/one"
+                />
+
+            <Button
+                android:id="@+id/btn_two"
+                style="@style/Button"
+                android:text="@string/two"
+                />
+
+            <Button
+                android:id="@+id/btn_three"
+                style="@style/Button"
+                android:text="@string/three"
+                />
+        </TableRow>
+
+        <TableRow
+            style="@style/Table">
+            <Button
+                android:id="@+id/btn_four"
+                style="@style/Button"
+                android:text="@string/four"
+                />
+
+            <Button
+                android:id="@+id/btn_five"
+                style="@style/Button"
+                android:text="@string/five"
+                />
+
+            <Button
+                android:id="@+id/btn_six"
+                style="@style/Button"
+                android:text="@string/six"
+                />
+        </TableRow>
+
+        <TableRow
+            style="@style/Table">
+            <Button
+                android:id="@+id/btn_seven"
+                style="@style/Button"
+                android:text="@string/seven"
+                />
+
+            <Button
+                android:id="@+id/btn_eight"
+                style="@style/Button"
+                android:text="@string/eight"
+                />
+
+            <Button
+                android:id="@+id/btn_nine"
+                style="@style/Button"
+                android:text="@string/nine"
+                />
+        </TableRow>
+
+        <TableRow
+            style="@style/Table">
+            <Button
+                android:id="@+id/btn_erase"
+                style="@style/Button"
+                android:text="@string/erase"
+                />
+
+            <Button
+                android:id="@+id/btn_zero"
+                style="@style/Button"
+                android:text="@string/zero"
+                />
+
+            <Button
+                android:id="@+id/btn_enter"
+                style="@style/Button"
+                android:text="@string/enter"
+                />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+
+

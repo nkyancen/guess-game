@@ -4,18 +4,26 @@
     <style name="VerticalLinearLayout">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+
+        <item name="android:layout_margin">10dp</item>
     </style>
 
-    <style name="Button_Style" parent="Widget.Material3.Button">
-<!--        <item name="android:layout_width">90dp</item>-->
+    <style name="Space">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">85dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Button" parent="Widget.Material3.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">1</item>
 
         <item name="android:layout_marginHorizontal">5dp</item>
         <item name="android:layout_marginVertical">10dp</item>
-        <item name="android:layout_marginStart">10dp</item>
-        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
 
         <item name="android:background">@color/button_back</item>
         <item name="android:fontFamily">sans-serif</item>
@@ -27,9 +35,17 @@
         <item name="android:typeface">normal</item>
     </style>
 
+    <style name="Restart_Button" parent="Button">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_weight">1</item>
+
+        <item name="android:layout_gravity">end</item>
+    </style>
+
     <style name="TextView" parent="Widget.AppCompat.TextView">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_height">80dp</item>
         <item name="android:layout_weight">1</item>
 
         <item name="android:layout_marginStart">25dp</item>
@@ -39,5 +55,11 @@
         <item name="android:textSize">34sp</item>
         <item name="android:textAlignment">gravity</item>
         <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Table">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
     </style>
 </resources>
